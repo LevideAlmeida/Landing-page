@@ -45,6 +45,10 @@ h6 {
     font-size: 3.5rem;
 }
 
+.white-bg {
+    background-color: white;
+}
+
 .main-bg {
     background-image: url(../img/main-bg.svg);
     background-size: cover;
@@ -63,13 +67,13 @@ h6 {
 }
 
 .menu {
-    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     border-bottom: 0.1rem solid #eee;
+    z-index: 1;
 }
 
 .menu-content {
@@ -98,7 +102,7 @@ h6 {
     padding: 2rem;
 }
 
-.menu ul li a{
+.menu ul li a {
     display: block;
     color: black;
     font-size: 1.8rem;
@@ -106,7 +110,7 @@ h6 {
     position: relative;
 }
 
-.menu ul li a::after{
+.menu ul li a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -120,4 +124,35 @@ h6 {
 .menu ul li a:hover::after {
     width: 100%;
     left: 0;
+}
+
+.intro-content {
+    display: grid;
+    position: relative;
+    top: -6rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    height: 100vh;
+}
+
+.intro-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text h2 {
+    font-size: 6.5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.intro-image img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#intro {
+    padding-top: 65px;
 }

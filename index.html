@@ -15,14 +15,15 @@
 <body>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1><a href="#">LOGO</a></h1>
+            <h1><a href="" target="_self">LOGO</a></h1>
             <nav>
                 <ul>
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#top3">top 3</a></li>
-                    <li><a href="#">gallery</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#hints">hints</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,7 +45,58 @@
         </div>
     </section>
 
-    <section class="white-bg section" id="top3"></section>
+    <section class="white-bg section" id="top3">
+        <div class="main-content top-content">
+            <h2>TOP 3 JOBS</h2>
+            <p>The release of Apple Silicon-based Macs at the end of last year
+                generated a flurry of news coverage and some surprises at the
+                machine's performance. This post details some background information
+                on the experience of porting Firefox to run natively on these CPUs.
+            </p>
+            <p>We'll start with some background on the Mac transition and give an
+                overview of Firefox internals that needed to know about the new
+                architecture, before moving on to the concept of Universal Binaries.
+            </p>
+            <p>We'll then explain how DRM/EME works on the new platform, talk about
+                our experience with macOS Big Sur, and discuss various updater
+                problems we had to deal with. We'll conclude with the release and
+                an overview of various other improvements that are in the pipeline.
+            </p>
+        </div>
+    </section>
+
+    <section class="main-bg section" id="hints">
+        <div class="main-content hints-content">
+            <div class="hints-title">
+                <h2>3 HINTS TO YOU</h2>
+                <p>Hints for beginnings in web development</p>
+            </div>
+            <div class="hints">
+                <article class="hint-one">
+                    <h3>First</h3>
+                    <p>This button would add a box to the row of key content boxes
+                        below the intro text. This should put the box there
+                        regardless of where the user is currently writing.</p>
+                </article>
+                <article class="hint-two">
+                    <h3>Another site</h3>
+                    <p>I'd suggest having a popup that asks where in the row to
+                        insert the box (at the beginning or end), what title to
+                        give the box, what text to put in the box, and where the
+                        box should link to. The entire box should serve as a link
+                        to the destination page.</p>
+                </article>
+                <article class="hint-three">
+                    <h3>Third one</h3>
+                    <p>You can also include a type attribute containing the MIME
+                        type of the resource, so a browser can quickly see what
+                        resources are on offer, and ignore ones that it doesn't
+                        support.</p>
+                </article>
+            </div>
+        </div>
+
+    </section>
 </body>
 
 </html>

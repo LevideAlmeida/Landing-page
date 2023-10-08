@@ -177,24 +177,24 @@ p {
     margin-bottom: 3rem;
 }
 
-.hints-content {
+.grid-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
 }
 
-.hints-title {
+.grid-title {
     display: flex;
     flex-flow: column wrap;
     margin-bottom: 10rem;
 }
 
-.hints-title p {
+.grid-title p {
     margin: 0;
 }
 
-.hints {
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
@@ -202,13 +202,13 @@ p {
     counter-reset: grid-counter;
 }
 
-.hints h3 {
+.grid h3 {
     font-size: 3rem;
     position: relative;
     margin-left: 6rem;
 }
 
-.hints h3::before {
+.grid h3::before {
     counter-increment: grid-counter;
     content: counter(grid-counter);
     position: absolute;

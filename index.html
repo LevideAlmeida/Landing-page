@@ -13,11 +13,15 @@
 </head>
 
 <body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             <h1><a href="" target="_self">LOGO</a></h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#top3">top 3</a></li>
                     <li><a href="#hints">hints</a></li>
@@ -33,7 +37,7 @@
     <section class="main-bg section" id="intro">
         <div class="main-content intro-content">
             <div class="intro-text">
-                <h2>The essentials for websites development</h2>
+                <h2>The essentials for web developer</h2>
                 <p>HTML, CSS and javascript, this three languages are the
                     pilars of web development. HTML(HyperText Markup
                     Language) with text formation, CSS(Cascading Style
@@ -267,8 +271,8 @@
 
                     <div class="form-group full-width">
                         <label for="message">Message:</label>
-                        <textarea type="text" placeholder="Message" name="message"
-                        id="message" cols="30" rows="10"></textarea>
+                        <textarea type="text" placeholder="Message" name="message" id="message" cols="30"
+                            rows="10"></textarea>
                     </div>
 
                     <div class="form-group">
@@ -280,8 +284,11 @@
     </section>
 
     <footer class="white-bg footer-content">
-        <p><a rel="nofollow" target="_blank" href="https://github.com/LevideAlmeida">Feito com ❤️ por Levi Almeida.</a></p>
+        <p><a rel="nofollow" target="_blank" href="https://github.com/LevideAlmeida">Feito com ❤️ por Levi Almeida.</a>
+        </p>
     </footer>
+
+    <a class="back-to-top" href="#">➤</a>
 </body>
 
 </html>

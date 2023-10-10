@@ -135,7 +135,6 @@ p {
 
 .intro-content {
     display: grid;
-    position: relative;
     top: -6rem;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -397,6 +396,27 @@ body .full-width {
     padding: 3rem;
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    border: 0.2rem solid var(--primary-color);
+}
+
+.close-menu {
+    display: none;
+}
+
 @media (max-width: 80rem) {
     .intro-content, .grid, .contact-content{
         grid-template-columns: 1fr;
@@ -422,5 +442,50 @@ body .full-width {
 
     .gallery-img img {
         width: 100%;
+    }
+
+
+}
+
+@media (max-width: 55rem) {
+    .menu {
+        bottom: 0;
+        text-align: center;
+        display: none;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .close-menu-label::after {
+        content: "≡";
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    /* × */
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
     }
 }

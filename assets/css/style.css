@@ -300,11 +300,8 @@ p {
 
 .contact-content {
     display: grid;
-    position: relative;
-    top: -6rem;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    align-items: center;
     min-height: 100vh;
 }
 
@@ -386,6 +383,8 @@ body .full-width {
 
 .footer-content {
     text-align: center;
+}    .contact-text {
+    display: block;
 }
 
 .footer-content a {
@@ -396,4 +395,32 @@ body .full-width {
 .footer-content p {
     margin: 0;
     padding: 3rem;
+}
+
+@media (max-width: 80rem) {
+    .intro-content, .grid, .contact-content{
+        grid-template-columns: 1fr;
+    }
+
+    .intro-content, .grid-title {
+        padding-top: 6.4rem;
+    }
+
+    .contact-form {
+        grid-column: span 1;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-img img {
+        width: 100%;
+    }
 }

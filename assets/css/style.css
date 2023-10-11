@@ -489,3 +489,9 @@ body .full-width {
         content: '×';
     }
 }
+
+@media (max-width: 36rem) {
+    .intro-text h2 {
+        font-size: 4rem;
+    }
+}
